@@ -1,0 +1,162 @@
+/* Đặt chung cho toàn bộ ứng dụng */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Layout tổng thể */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Nút Thêm Hàng Hóa */
+button {
+  background-color: #218838;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Nút Xóa và Chỉnh Sửa */
+.product-list button {
+  margin-left: 10px;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+button.edit-btn {
+  background-color: #007bff;
+}
+
+button.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Danh sách sản phẩm */
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.product-list li span {
+  font-size: 18px;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Phân trang */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #17a2b8;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Form thêm và chỉnh sửa sản phẩm */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form button[type="submit"] {
+  background-color: #28a745;
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
